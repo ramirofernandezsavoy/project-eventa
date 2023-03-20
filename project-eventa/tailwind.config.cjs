@@ -9,9 +9,11 @@ module.exports = {
       colors: {
         'primary': '#0091AD',
         'primary-hover': '#005667',
-        'secondary': '#FF57BB',        
+        'secondary': '#FF57BB',
+        'secondary-hover': '#a13374',       
         'plain': '#EFE9F4',
-        'details': '#95C623'    
+        'details': '#95C623',
+        'details-hover': '#48610f',
       },
       fontFamily: {
         rob: ['Roboto', 'sans-serif'],

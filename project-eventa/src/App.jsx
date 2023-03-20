@@ -1,14 +1,11 @@
-import Navbar from './components/Navbar/Navbar'
-import Footer from './components/Footer/Footer'
+import Home from "./views/Home"
 
 function App() {  
 
   return (
-    <>
-    <Navbar/>
-      <h1>Hello world, this is EVENTA.</h1>
-    <Footer/>
-    </>
+    <body className="bg-plain h-full">
+      <Home/>    
+    </body>
     
   )
 }
