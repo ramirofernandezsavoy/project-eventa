@@ -3,12 +3,16 @@ import React from "react";
 const SearchEvent = () => {
   return (
     <section className="flex justify-around items-center container mx-auto py-24">
-      <div className="text-center max-w-screen-md">
-        <h2 className=" font-rob text-4xl inline-block">
-          Be the live and soul of the{" "}
-          <span className="text-4xl font-extrabold text-secondary">party!</span>{" "}
-        </h2>
-        <p className="font-robSerif font-bold text-xl py-2 my-5 text-gray-600">
+      <div className="text-center max-w-screen-md w-full p-5">
+        <div className="flex flex-col text-center max-w-screen-md w-full p-5">
+          <h1 className=" font-rob text-3xl inline-block">
+            Paste here your {" "}
+            <span className=" font-extrabold text-secondary ">event ID</span>
+            {" "}and join your friends!
+          </h1>
+          <input type="text" className="form-input text-xs" />
+        </div>
+        <p className="font-robSerif font-bold text-xl py-4 my-5 text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
           voluptates vero id, reiciendis accusamus impedit. Voluptatum hic quod
           aliquid est. Qui perferendis minus officiis a blanditiis dolores animi
@@ -16,8 +20,8 @@ const SearchEvent = () => {
           eligendi incidunt aspernatur porro repellendus, modi alias fugit
           voluptate at vero nemo cumque?
         </p>
-        <button className=" bg-secondary hover:bg-secondary-hover font-rob text-white font-bold py-4 px-4 rounded text-xl">
-          Look for an event!
+        <button className=" bg-secondary hover:bg-secondary-hover font-rob text-white font-bold py-4 px-16 rounded text-xl">
+          Search!
         </button>
       </div>
       <svg

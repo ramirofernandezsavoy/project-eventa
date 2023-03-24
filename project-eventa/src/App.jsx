@@ -1,12 +1,11 @@
-import Home from "./views/Home"
+import Routing from "./routing/Routing"
+import "./styles/App.css"
 
 function App() {  
-
   return (
     <body className="bg-plain h-full">
-      <Home/>    
-    </body>
-    
+      <Routing />      
+    </body>    
   )
 }
 
