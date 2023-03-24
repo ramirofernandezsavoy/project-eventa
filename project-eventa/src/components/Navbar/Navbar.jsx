@@ -4,7 +4,7 @@ export const Navbar = () => {
   return (
     <nav className="p-1 h-16 bg-primary flex text-white justify-between items-center font-rob font-semibold ">
       <img
-        src="../../../public/eventa-logo2.png"
+        src="../../../eventa-logo2.png"
         alt="eLogo"
         className="w-24 p-2"
       />
