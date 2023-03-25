@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom' 
 
 const SearchEvent = () => {
   return (
-    <section className="flex justify-around items-center container mx-auto py-24">
-      <div className="text-center max-w-screen-md w-full p-5">
+    <section className="flex justify-around items-center mx-auto">
+      <div className="text-center max-w-screen-md">
         <div className="flex flex-col text-center max-w-screen-md w-full p-5">
           <h1 className=" font-rob text-3xl inline-block">
-            Paste here your {" "}
+            Or... paste here your {" "}
             <span className=" font-extrabold text-secondary ">event ID</span>
             {" "}and join your friends!
           </h1>
@@ -20,15 +21,17 @@ const SearchEvent = () => {
           eligendi incidunt aspernatur porro repellendus, modi alias fugit
           voluptate at vero nemo cumque?
         </p>
-        <button className=" bg-secondary hover:bg-secondary-hover font-rob text-white font-bold py-4 px-16 rounded text-xl">
+        <Link to={'/event-finder'}>
+        <button className=" bg-secondary hover:bg-secondary-hover font-rob text-white font-bold py-2 px-8 rounded text-xl">
           Search!
         </button>
+        </Link>
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         data-name="Layer 1"
-        width="600"
-        height="500"
+        width="400"
+        height="400"
         viewBox="0 0 732.64277 638.92105"
         xmlns:xlink="http://www.w3.org/1999/xlink"
       >

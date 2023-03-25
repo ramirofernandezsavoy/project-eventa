@@ -1,23 +1,24 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <nav className="p-1 h-16 bg-primary flex text-white justify-between items-center font-rob font-semibold ">
-      <img
-        src="../../../eventa-logo2.png"
-        alt="eLogo"
-        className="w-24 p-2"
-      />
+      <Link to={"/"}><img src="../../../eventa-logo2.png" alt="eLogo" className="w-24 p-2" /></Link>
       <ul className="flex w-1/4 justify-center items-center">
         <li>
-          <button className="hover:bg-primary-hover text-white font-bold py-2 px-4 rounded">
-            Home
-          </button>
+          <Link to={"/"}>
+            <button className="hover:bg-primary-hover text-white font-bold py-2 px-4 rounded">
+              Home
+            </button>
+          </Link>
         </li>
         <li>
-          <button className="hover:bg-primary-hover text-white font-bold py-2 px-4 rounded">
-            Contact us
-          </button>
+          <Link to={"/contact"}>
+            <button className="hover:bg-primary-hover text-white font-bold py-2 px-4 rounded">
+              Contact us
+            </button>
+          </Link>
         </li>
         <li>
           <button className="hover:bg-primary-hover text-white font-bold py-2 px-4 rounded">
@@ -38,22 +39,24 @@ export const Navbar = () => {
           </button>
         </li>
         <li>
-          <button className="hover:bg-primary-hover text-white font-bold py-2 px-4 rounded">
-            <svg
-              width="32"
-              height="32"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-              <path d="M12 3a4 4 0 1 0 0 8 4 4 0 1 0 0-8z"></path>
-            </svg>
-          </button>
+          <Link to={"/login"}>
+            <button className="hover:bg-primary-hover text-white font-bold py-2 px-4 rounded">
+              <svg
+                width="32"
+                height="32"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <path d="M12 3a4 4 0 1 0 0 8 4 4 0 1 0 0-8z"></path>
+              </svg>
+            </button>
+          </Link>
         </li>
       </ul>
     </nav>

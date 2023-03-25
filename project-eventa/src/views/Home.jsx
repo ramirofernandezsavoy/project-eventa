@@ -9,9 +9,9 @@ const Home = () => {
   return (
     <>
       <Navbar />      
-      <Hero />
+      <Hero />      
+      <SearchEvent />
       <Newsletter />
-      <SearchEvent /> 
       <Footer />
     </>
   );

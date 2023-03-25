@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <main className="flex justify-around items-center container mx-auto py-10">
+    <main className="flex justify-around items-center mx-auto py-3">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         data-name="Layer 1"
-        width="500"
-        height="500"
+        width="400"
+        height="400"
         viewBox="0 0 842 842.79999"
         xmlns:xlink="http://www.w3.org/1999/xlink"
       >
@@ -262,8 +263,8 @@ const Hero = () => {
       </svg>
       <div className="text-center max-w-screen-md">        
         <h1 className=" font-rob text-4xl inline-block">We make sure your event is a <span className=" font-extrabold text-details ">success!</span></h1>
-        <p className="font-robSerif font-bold text-xl py-2 my-5 text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident voluptates vero id, reiciendis accusamus impedit. Voluptatum hic quod aliquid est. Qui perferendis minus officiis a blanditiis dolores animi reprehenderit voluptatem! Ipsa temporibus harum vel eveniet ab maxime eligendi incidunt aspernatur porro repellendus, modi alias fugit voluptate at vero nemo cumque?</p>
-        <button className=" bg-details hover:bg-details-hover font-rob text-white font-bold py-4 px-4 rounded text-xl">Create your event!</button>
+        <p className="font-robSerif font-bold text-lg py-1 my-3 text-gray-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident voluptates vero id, reiciendis accusamus impedit. Voluptatum hic quod aliquid est. Qui perferendis minus officiis a blanditiis dolores animi reprehenderit voluptatem! Ipsa temporibus harum vel eveniet ab maxime eligendi incidunt aspernatur porro repellendus, modi alias fugit voluptate at vero nemo cumque?</p>
+        <Link to={'/event-creation'}><button className=" bg-details hover:bg-details-hover font-rob text-white font-bold py-2 px-3 rounded text-xl">Create your event!</button></Link>
       </div>      
     </main>
   );

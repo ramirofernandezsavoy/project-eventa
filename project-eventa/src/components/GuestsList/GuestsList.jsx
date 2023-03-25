@@ -1,5 +1,5 @@
 import React from 'react'
-import Guest from '../Guest.jsx/Guest'
+import Guest from '../Guest/Guest'
 
 const GuestsList = () => {
   return (
