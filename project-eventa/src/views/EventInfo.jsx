@@ -9,9 +9,9 @@ const EventInfo = () => {
   return (
     <>
     <Navbar/>
-    <EventGuestPanel/>
-    <Newsletter/>
+    <EventGuestPanel/>    
     <GuestsList/>
+    <Newsletter/>
     <Footer/>    
     </>
   )

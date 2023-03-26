@@ -21,7 +21,7 @@ const SearchEvent = () => {
           eligendi incidunt aspernatur porro repellendus, modi alias fugit
           voluptate at vero nemo cumque?
         </p>
-        <Link to={'/event-finder'}>
+        <Link to={'/event-info'}>
         <button className=" bg-secondary hover:bg-secondary-hover font-rob text-white font-bold py-2 px-8 rounded text-xl">
           Search!
         </button>
