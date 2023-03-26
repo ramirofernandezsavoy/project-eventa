@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { fullForm } from "../../helpers";
 import Swal from "sweetalert2";
+import useFirebase from "../../hooks/useFirebase";
+
 
 
 const CreateEvent = () => {
-  
+
+  const { getEvent } = useFirebase();  
   const [formData, setFormData] = useState({
     eName: "",
     eInfo: "",
@@ -46,7 +49,7 @@ const CreateEvent = () => {
       confirmButtonText: "Have fun",      
       icon: "success",
     });
-    // getEvent({ datos: formData });
+    getEvent({ eData: formData });
   };
 
   return (
