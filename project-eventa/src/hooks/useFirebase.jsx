@@ -35,8 +35,8 @@ const getEvent =  async (id) => {
             const event = await addDoc(col, eData)
             return (                
                     Swal.fire({
-                        title: "Event ${event.id} created",
-                        text: `Your event id is ${event.id}.`,
+                        title: "Event created",
+                        text: `Your event URL is http://localhost:5173/event-info/${event.id}`,
                         icon: "success",
                         timerProgressBar: true,
                     })
