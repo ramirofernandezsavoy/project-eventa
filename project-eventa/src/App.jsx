@@ -1,11 +1,16 @@
 import Routing from "./routing/Routing"
 import "./styles/App.css"
+import Layout from "./layout/Layout"
 
 function App() {  
   return (
-    <body className="bg-plain h-full">
+    <div className="bg-plain h-full">
+      {/* <GlobalContext> */}
+      <Layout>
       <Routing />      
-    </body>    
+      </Layout>
+      {/* </GlobalContext> */}
+    </div>    
   )
 }
 

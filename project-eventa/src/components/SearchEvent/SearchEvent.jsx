@@ -1,17 +1,25 @@
 import React from "react";
-import { Link } from 'react-router-dom' 
+import { useNavigate } from "react-router-dom";
 
 const SearchEvent = () => {
+
+  const navigate = useNavigate();
+
+  const goToEvent = (e) => {    
+    let userEventId = document.getElementById("userIdInput").value;     
+    navigate(`/event-info/${userEventId}`)
+  }
+
   return (
     <section className="flex justify-around items-center mx-auto">
       <div className="text-center max-w-screen-md">
         <div className="flex flex-col text-center max-w-screen-md w-full p-5">
           <h1 className=" font-rob text-3xl inline-block">
-            Or... paste here your {" "}
-            <span className=" font-extrabold text-secondary ">event ID</span>
-            {" "}and join your friends!
+            Or... paste here your{" "}
+            <span className=" font-extrabold text-secondary ">event ID</span>{" "}
+            and join your friends!
           </h1>
-          <input type="text" className="form-input text-xs" />
+          <input type="text" className="form-input text-xs" id="userIdInput" />
         </div>
         <p className="font-robSerif font-bold text-xl py-4 my-5 text-gray-600">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
@@ -20,12 +28,10 @@ const SearchEvent = () => {
           reprehenderit voluptatem! Ipsa temporibus harum vel eveniet ab maxime
           eligendi incidunt aspernatur porro repellendus, modi alias fugit
           voluptate at vero nemo cumque?
-        </p>
-        <Link to={'/event-info'}>
-        <button className=" bg-secondary hover:bg-secondary-hover font-rob text-white font-bold py-2 px-8 rounded text-xl">
-          Search!
-        </button>
-        </Link>
+        </p>        
+          <button onClick={goToEvent} className=" bg-secondary hover:bg-secondary-hover font-rob text-white font-bold py-2 px-8 rounded text-xl">
+            Search!
+          </button>        
       </div>
       <svg
         xmlns="http://www.w3.org/2000/svg"

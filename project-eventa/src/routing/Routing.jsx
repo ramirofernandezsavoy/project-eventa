@@ -13,9 +13,9 @@ const Routing = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/event-admin" element={<EventAdmin/>} />
+        <Route path="/event-admin/:id" element={<EventAdmin/>}/>
         <Route path="/event-creation" element={<EventCreation/>} />        
-        <Route path="/event-info" element={<EventInfo/>} />
+        <Route path="/event-info/:id" element={<EventInfo/>} />
         <Route path="/contact" element={<Contact/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="*" element={<Error />} />

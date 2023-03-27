@@ -1,18 +1,17 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
-import Newsletter from '../components/Newsletter/Newsletter'
 import Footer from '../components/Footer/Footer'
 import EventGuestPanel from '../components/EventGuestPanel/EventGuestPanel'
-import GuestsList from '../components/GuestsList/GuestsList'
+import Newsletter from '../components/Newsletter/Newsletter'
+
 
 const EventInfo = () => {
   return (
     <>
     <Navbar/>
-    <EventGuestPanel/>    
-    <GuestsList/>
+    <EventGuestPanel/>
     <Newsletter/>
-    <Footer/>    
+    <Footer/>
     </>
   )
 }

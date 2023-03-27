@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { fullForm } from "../../helpers";
 import Swal from "sweetalert2";
 import useFirebase from "../../hooks/useFirebase";
+import { Navigate } from "react-router-dom"
 
 
 
@@ -49,7 +50,7 @@ const CreateEvent = () => {
       confirmButtonText: "Have fun",      
       icon: "success",
     });
-    getEvent({ eData: formData });
+    getEvent({ eData: formData });    
   };
 
   return (
